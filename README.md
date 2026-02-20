@@ -1,81 +1,234 @@
-Calculadora App - Proyecto de Programación Orientada a Objetos (POO)
-📌 Descripción del Proyecto
-Calculadora App es una aplicación de escritorio desarrollada en Java utilizando Swing para la interfaz gráfica. Este proyecto fue creado como parte de la asignatura de Programación Orientada a Objetos (POO) en la Universidad UTS.
+# 🧮 Calculadora App - Proyecto de Programación Orientada a Objetos (POO)
 
-La aplicación permite realizar operaciones matemáticas básicas (suma, resta, multiplicación y división) entre dos números, con validaciones de entrada y manejo de errores, siguiendo los principios de la POO.
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+![Swing](https://img.shields.io/badge/Swing-007396?style=for-the-badge&logo=java&logoColor=white)
+![NetBeans](https://img.shields.io/badge/NetBeans-1B6AC6?style=for-the-badge&logo=apache-netbeans-ide&logoColor=white)
 
-👩‍💻 Autora
-Liseth Nathalia Ayala
-Estudiante de la Universidad UTS
-Trabajo presentado para la asignatura de Programación Orientada a Objetos
+---
 
-🧠 Conceptos de POO Aplicados
-Clases y Objetos: Se utiliza la clase Calculadora (proveniente del paquete utils.edu.fpoo.mundo) para encapsular la lógica de las operaciones.
+## 📋 Tabla de Contenidos
+- [Descripción del Proyecto](#-descripción-del-proyecto)
+- [Autora](#-autora)
+- [Universidad](#-universidad)
+- [Características](#-características)
+- [Conceptos POO Aplicados](#-conceptos-poo-aplicados)
+- [Tecnologías Utilizadas](#-tecnologías-utilizadas)
+- [Estructura del Proyecto](#-estructura-del-proyecto)
+- [Funcionalidades](#-funcionalidades)
+- [Validaciones Implementadas](#-validaciones-implementadas)
+- [Cómo Ejecutar](#-cómo-ejecutar)
+- [Capturas de Pantalla](#-capturas-de-pantalla)
+- [Evidencias de Funcionamiento](#-evidencias-de-funcionamiento)
+- [Conclusiones](#-conclusiones)
+- [Agradecimientos](#-agradecimientos)
 
-Encapsulamiento: Los operandos se asignan a través de métodos set y se obtienen con métodos get.
+---
 
-Métodos: Cada operación matemática es un método dentro de la clase Calculadora.
+## 📝 Descripción del Proyecto
 
-Separación de responsabilidades: La interfaz gráfica (FormularioCalculadora) maneja la interacción con el usuario, mientras que la lógica de negocio está en la clase Calculadora.
+**Calculadora App** es una aplicación de escritorio desarrollada en Java que implementa una calculadora con interfaz gráfica amigable. Este proyecto fue desarrollado como parte de la asignatura de **Programación Orientada a Objetos (POO)** y permite realizar operaciones matemáticas básicas con validaciones robustas y manejo de errores.
 
-🖥️ Tecnologías Utilizadas
-Java SE
+La aplicación cuenta con una interfaz intuitiva que permite al usuario ingresar dos números, seleccionar la operación deseada y visualizar el resultado en tiempo real, todo esto aplicando los principios fundamentales de la Programación Orientada a Objetos.
 
-Swing (para la interfaz gráfica)
+---
 
-NetBeans (entorno de desarrollo)
+## 👩‍💻 Autora
 
-AbsoluteLayout (diseño de interfaz)
+| Información | Detalles |
+|------------|----------|
+| **Nombre** | Liseth Nathalia Ayala |
+| **Asignatura** | Programación Orientada a Objetos (POO) |
+| **Institución** | Universidad UTS |
+| **Semestre** | [Insertar semestre] |
+| **Año** | 2024 |
 
-🧮 Funcionalidades
-Ingreso de dos números (enteros o decimales).
+---
 
-Validación de campos vacíos.
+## 🏛️ Universidad
 
-Validación de tipo de dato (solo números).
+<div align="center">
 
-Prevención de división entre cero.
+### **Universidad UTS** *(Unidades Tecnológicas de Santander)*
 
-Realización de operaciones:
+**Facultad de Ciencias Naturales e Ingenierías**  
+**Tecnología en Desarrollo de Sistemas Informáticos**
 
-➕ Suma
+</div>
 
-➖ Resta
+---
 
-✖️ Multiplicación
+## ✨ Características
 
-➗ División
+- ✅ Interfaz gráfica intuitiva desarrollada con Swing
+- ✅ Operaciones matemáticas básicas
+- ✅ Validación completa de datos de entrada
+- ✅ Prevención de errores comunes (división por cero)
+- ✅ Manejo de excepciones
+- ✅ Diseño responsive con AbsoluteLayout
+- ✅ Icono institucional personalizado
+- ✅ Botones con efectos visuales
 
-Visualización del resultado en campos específicos.
+---
 
-Botón Limpiar para reiniciar todos los campos.
+## 🎯 Conceptos POO Aplicados
 
-Botón Salir para cerrar la ventana.
+| Concepto | Implementación |
+|----------|---------------|
+| **Clases** | `FormularioCalculadora` y `Calculadora` |
+| **Objetos** | Instancias de la clase `Calculadora` |
+| **Encapsulamiento** | Atributos privados con getters y setters |
+| **Métodos** | `Sumar()`, `Restar()`, `Multiplicar()`, `Dividir()` |
+| **Abstracción** | Separación de la lógica de negocio de la interfaz |
+| **Manejo de Excepciones** | Try-catch para errores de formato |
 
-🚀 Cómo ejecutar el proyecto
-Clona el repositorio o descarga los archivos fuente.
+---
 
-Abre el proyecto en NetBeans (o cualquier IDE compatible con Java).
+## 💻 Tecnologías Utilizadas
 
-Asegúrate de que la clase Calculadora esté disponible en la ruta:
-utils.edu.fpoo.mundo.Calculadora
+| Tecnología | Descripción |
+|------------|-------------|
+| **Java SE** | Lenguaje de programación principal |
+| **Swing** | Biblioteca para interfaz gráfica |
+| **NetBeans IDE** | Entorno de desarrollo integrado |
+| **AbsoluteLayout** | Gestor de diseño para la interfaz |
+| **Git** | Control de versiones |
 
-Ejecuta la clase FormularioCalculadora.
+---
 
-📁 Estructura del Proyecto
+## 📁 Estructura del Proyecto
+CalculadoraApp/
+│
+├── src/
+│ ├── calculadoraapp/
+│ │ ├── FormularioCalculadora.java
+│ │ └── LogoAzul.jpeg
+│ │
+│ └── utils/
+│ └── edu/
+│ └── fpoo/
+│ └── mundo/
+│ └── Calculadora.java
+│
+├── README.md
+└── LICENSE
+
 text
-calculadoraapp/
-│
-├── FormularioCalculadora.java       # Interfaz gráfica y lógica de eventos
-│
-└── utils/
-    └── edu/
-        └── fpoo/
-            └── mundo/
-                └── Calculadora.java  # Lógica de las operaciones
-📸 Vista Previa
-(Aquí puedes agregar una captura de pantalla de la interfaz si deseas)
 
-📚 Notas Académicas
-Este proyecto fue desarrollado con fines educativos para demostrar la aplicación de los conceptos fundamentales de la Programación Orientada a Objetos en un entorno gráfico interactivo.
+---
 
+## 🔧 Funcionalidades
+
+### ➕ Operaciones Disponibles
+
+1. **Suma** - Suma dos números
+2. **Resta** - Resta dos números
+3. **Multiplicación** - Multiplica dos números
+4. **División** - Divide dos números (con validación)
+
+### 🎮 Controles
+
+- **Botón Sumar**: Realiza la operación de suma
+- **Botón Restar**: Realiza la operación de resta
+- **Botón Multiplicar**: Realiza la operación de multiplicación
+- **Botón Dividir**: Realiza la operación de división
+- **Botón Limpiar**: Limpia todos los campos
+- **Botón Salir**: Cierra la aplicación
+
+---
+
+## ✅ Validaciones Implementadas
+
+```java
+// Validaciones incluidas:
+1. Campos vacíos ❌
+2. Formato numérico incorrecto ❌
+3. División por cero ❌
+4. Números decimales ✓
+5. Números enteros ✓
+🚀 Cómo Ejecutar
+Requisitos Previos
+JDK 8 o superior
+
+NetBeans IDE (opcional)
+
+Git (opcional)
+
+Pasos de Instalación
+Clonar el repositorio
+
+bash
+git clone [URL-del-repositorio]
+Abrir en NetBeans
+
+File → Open Project
+
+Seleccionar la carpeta del proyecto
+
+Compilar y Ejecutar
+
+Presionar F6 o
+
+Run → Run Project
+
+Ejecución desde terminal
+bash
+javac calculadoraapp/FormularioCalculadora.java
+java calculadoraapp.FormularioCalculadora
+📸 Capturas de Pantalla
+Interfaz Principal
+text
+┌─────────────────────────────────────┐
+│  Calculadora                        │
+├─────────────────────────────────────┤
+│  Número 1: [______]                 │
+│  Número 2: [______]                 │
+│                                     │
+│  [Sumar] [Restar]                   │
+│  [Multiplicar] [Dividir]            │
+│                                     │
+│  Resultados:                        │
+│  Suma: [______]                     │
+│  Resta: [______]                    │
+│  Multiplicación: [______]           │
+│  División: [______]                  │
+│                                     │
+│  [Limpiar] [Salir]                  │
+└─────────────────────────────────────┘
+🧪 Evidencias de Funcionamiento
+Casos de Prueba
+Caso	Entrada 1	Entrada 2	Operación	Resultado Esperado
+1	10	5	Suma	15
+2	10	5	Resta	5
+3	10	5	Multiplicación	50
+4	10	5	División	2
+5	10	0	División	Error
+6	"a"	5	Cualquiera	Error
+📚 Conclusiones
+Aprendizaje Significativo: Se logró aplicar los conceptos fundamentales de la Programación Orientada a Objetos en un proyecto práctico.
+
+Separación de Responsabilidades: La aplicación demuestra correctamente la separación entre la interfaz de usuario y la lógica de negocio.
+
+Validación de Datos: Se implementaron validaciones robustas que previenen errores comunes y mejoran la experiencia del usuario.
+
+Manejo de Errores: El sistema maneja adecuadamente las excepciones y proporciona mensajes claros al usuario.
+
+👏 Agradecimientos
+Agradecimiento especial a:
+
+Universidad UTS - Por proporcionar los conocimientos fundamentales
+
+Docente de POO - Por la guía y enseñanza
+
+Compañeros de clase - Por el apoyo y retroalimentación
+
+📄 Licencia
+Este proyecto está bajo la Licencia MIT - ver el archivo LICENSE para más detalles.
+
+<div align="center">
+Desarrollado con ❤️ para la Universidad UTS
+
+Liseth Nathalia Ayala
+Programación Orientada a Objetos
+*2024*
+
+</div> ```
